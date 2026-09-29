@@ -204,3 +204,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize
     APPS.forEach(app => fetchLatestRelease(app));
 });
+
+// Store links. Android opens the Play Store app; desktop opens the store page.
+// Set APP_STORE_URL once the iOS app is published (e.g. https://apps.apple.com/app/id123456789).
+(function () {
+    var PLAY_ID = 'com.tdf.tdfGIPapp';
+    var APP_STORE_URL = '';
+
+    var play = document.getElementById('playstore-link');
+    if (play && /Android/i.test(navigator.userAgent)) {
+        play.href = 'market://details?id=' + PLAY_ID;
+        play.removeAttribute('target');
+    }
+
+    var apple = document.getElementById('appstore-link');
+    if (apple && APP_STORE_URL) {
+        apple.href = APP_STORE_URL;
+        apple.classList.remove('disabled');
+        apple.removeAttribute('aria-disabled');
+        document.getElementById('appstore-note').textContent = 'DOWNLOAD ON THE';
+    }
+})();

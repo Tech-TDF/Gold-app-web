@@ -53,6 +53,30 @@
             <p id="error-msg" class="error-message"></p>
         </div>
 
+        <!-- Store badges -->
+        <section class="store-section">
+            <h2 class="store-title">Download the App</h2>
+            <div class="store-badges">
+                <a id="playstore-link" class="store-badge" target="_blank" rel="noopener"
+                   href="https://play.google.com/store/apps/details?id=com.tdf.tdfGIPapp&hl=en_IN">
+                    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                        <path fill="#00C3FF" d="M3.6 2.2c-.3.3-.5.8-.5 1.4v16.8c0 .6.2 1.1.5 1.4l.1.1L13.1 12v-.2L3.7 2.1z"/>
+                        <path fill="#FFCE00" d="M16.2 15.2 13.1 12v-.2l3.1-3.2.1.1 3.7 2.1c1.1.6 1.1 1.6 0 2.2l-3.7 2.1z"/>
+                        <path fill="#F43249" d="M16.3 15.1 13.1 12 3.6 21.8c.4.4.9.4 1.6.1z"/>
+                        <path fill="#00F076" d="M16.3 8.9 5.2 2.1c-.7-.4-1.2-.3-1.6.1L13.1 12z"/>
+                    </svg>
+                    <span class="badge-text"><small>GET IT ON</small><strong>Google Play</strong></span>
+                </a>
+                <a id="appstore-link" class="store-badge disabled" target="_blank" rel="noopener"
+                   href="#" aria-disabled="true">
+                    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+                        <path fill="currentColor" d="M16.4 12.6c0-2.4 2-3.5 2.1-3.6-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9s-1.9-.9-3.200-.8c-1.6 0-3.1 1-4 2.400-1.700 3-.4 7.300 1.200 9.700.8 1.200 1.800 2.500 3 2.400 1.200 0 1.700-.8 3.100-.8s1.900.8 3.200.8c1.300 0 2.200-1.200 3-2.400.9-1.300 1.300-2.700 1.300-2.700s-2.500-1-2.500-3.900zM14 5.400c.7-.8 1.100-1.900 1-3-1 0-2.100.7-2.800 1.500-.6.700-1.200 1.800-1 2.900 1.100.1 2.100-.6 2.800-1.400z"/>
+                    </svg>
+                    <span class="badge-text"><small id="appstore-note">COMING SOON</small><strong>App Store</strong></span>
+                </a>
+            </div>
+        </section>
+
         <!-- TMS App: Android build of app.tdfjewellery.com (see android/README.md) -->
         <section class="section other-apps-section">
             <h2 class="section-title">Also available</h2>
@@ -106,6 +130,7 @@
             </div>
         </section>
 
+
         <!-- Fullscreen Image Modal -->
         <div id="image-modal" class="modal">
             <span class="close-modal" id="close-modal">&times;</span>
@@ -114,6 +139,7 @@
             <!-- <span class="nav-btn next-btn" id="next-img">&#10095;</span> -->
             <div id="modal-caption" class="modal-caption"></div>
         </div>
+        <footer class="site-footer">&copy; TDF Diamonds Tech &middot; Gold App</footer>
     </main>
 
     <script src="script.js"></script>
